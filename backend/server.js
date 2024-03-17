@@ -35,6 +35,9 @@ const verifyToken = (req, res, next) => {
 };
 
 // Routes
+api.get('/',(req,res)=>{
+  res.json("hello")
+}
 app.post('/api/register', (req, res) => {
   const { username, password } = req.body;
 
